@@ -1,0 +1,71 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "PawnPaths": {
+    "MyCustomBayraktar": {
+      "PawnBP": "Class'/AirSim/Blueprints/BP_FlyingPawn.BP_FlyingPawn_C'"
+    }
+  },
+  "Vehicles": {
+    "BayraktarUAV": {
+      "VehicleType": "SimpleFlight",
+      "DefaultVehicleState": "Armed",
+      "PawnPath": "MyCustomBayraktar",
+      "PhysicsEngine": "FastPhysicsEngine",
+      "AutoCreate": true,
+      "AllowAPIControl": true,
+      "X": 0,
+      "Y": 0,
+      "Z": -250,
+      "Pitch": 0,
+      "Roll": 0,
+      "Yaw": 45,
+      "Cameras": {
+        "ChaseCam": {
+          "CaptureSettings": [
+            {
+              "ImageType": 5,
+              "Width": 1280,
+              "Height": 720,
+              "FOV_Degrees": 18.0,
+              "AutoExposureSpeed": 100.0,
+              "AutoExposureBias": -0.5,
+              "MotionBlurAmount": 0.0,
+              "TargetGamma": 1.2
+            },
+            {
+              "ImageType": 7,
+              "Width": 1280,
+              "Height": 720,
+              "FOV_Degrees": 18.0
+            }
+          ],
+          "X": -220.0,
+          "Y": 0.0,
+          "Z": -18.0,
+          "Pitch": -8.0,
+          "Roll": 0.0,
+          "Yaw": 0.0
+        }
+      }
+    }
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 1280,
+        "Height": 720,
+        "FOV_Degrees": 18.0,
+        "MotionBlurAmount": 0.0
+      }
+    ]
+  },
+  "CameraDirector": {
+    "FollowDistance": -150.0,
+    "X": -150.0,
+    "Y": 0.0,
+    "Z": -350.0
+  }
+}
