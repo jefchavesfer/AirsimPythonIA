@@ -1,0 +1,9 @@
+# Dataset config for YOLO-FIRI (YOLOv5 v4-style loader).
+# This loader needs absolute image folders (no 'path:' key) and list-style names.
+# Labels are found by swapping /images/ -> /labels/ in each path.
+train: C:/Users/jefch/AirSimPython/yoloTrainVal_ir/images/train
+val: C:/Users/jefch/AirSimPython/yoloTrainVal_ir/images/val
+test: C:/Users/jefch/AirSimPython/yoloTrainVal_ir/images/test
+
+nc: 3
+names: ['bayraktar_tb2', 'geran', 'mq9_reaper']
